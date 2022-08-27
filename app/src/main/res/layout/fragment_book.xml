@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for starting a new order -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".BookFragment">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.cupcake.BookFragment" />
+    </data>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:layoutDirection="rtl"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal"
+            android:elevation="2dp"
+
+            android:background="@drawable/customborder"
+
+            >
+
+
+            <TextView
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:text="ماوراء الخير و الشر"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:background="#08000000"
+            >
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="375dp"
+                tools:context=".MainActivity"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+
+            <ImageView
+                android:background="@drawable/customborder"
+                android:layout_width="300dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/book1"
+                />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="90dp"
+                android:text="ماوراء الخير و الشر"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:gravity="center"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:shadowRadius="10"
+                android:text="تباشير فلسفة للمستقبل"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:shadowRadius="10"
+                android:text="فريدريش نيتشه"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp" />
+              <com.example.cupcake.MyGradientTextView
+            android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:shadowRadius="10"
+                android:text="ملخص"
+                android:gravity="start"
+                android:textSize="50sp"
+                  android:textStyle="bold"
+                android:paddingStart="20dp"
+                />
+            <TextView
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:shadowRadius="10"
+                android:text="			يقدم الفيلسوف الألماني فريدريك نيتشه في كتابه (ما وراء الخير والشر) نقدًا للعلوم والسياسة والفن في العالم الحديث بواسطة مجموعة من الأمثال والتعليقات. يستخدم المؤلف القصائد القصيرة لإلقاء ضوءٍ فريد على الحقيقة والطبيعة. يتكون النص من تسعة مواضيع مع قصيدة في النهاية. "
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</layout>
