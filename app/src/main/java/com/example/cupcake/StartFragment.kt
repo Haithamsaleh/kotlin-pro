@@ -15,6 +15,8 @@
  */
 package com.example.cupcake
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -89,10 +91,42 @@ class StartFragment : Fragment() {
         findNavController().navigate(R.id.action_startFragment_to_book5Fragment)
 
     }
-    /**
-     * This fragment lifecycle method is called when the view hierarchy associated with the fragment
-     * is being removed. As a result, clear out the binding object.
-     */
+    fun getUrlFromIntent() {
+        val url = "https://drive.google.com/file/d/1PTG_dMzOuDJ29TWi4Vtei-Ia1D7rCcAP/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+    fun getUrlFromIntent2() {
+        val url = "https://drive.google.com/file/d/1p-k6oG7ifA-9g_2Sp3YlZwxakC9igbkc/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+    fun getUrlFromIntent3() {
+        val url = "https://drive.google.com/file/d/1PL-SkLHPzS3RRLcweoqfJ0Hlt33RJAd5/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+    fun getUrlFromIntent4() {
+        val url = "https://drive.google.com/file/d/1KeYcQ-gN1CK7iZEtC9PN3ID6SCrnAQK7/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+    fun getUrlFromIntent5() {
+        val url = "https://drive.google.com/file/d/14fwNDiptrvYZ38Xedmry-NzRZGpY3V1n/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+    fun getUrlFromIntent6() {
+        val url = "https://drive.google.com/file/d/1IiWZwGO0AGKEufqnWNyiX6RMJ-AwuVV_/view?usp=sharing"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null

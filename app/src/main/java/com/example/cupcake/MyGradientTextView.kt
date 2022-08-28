@@ -33,7 +33,7 @@ class MyGradientTextView : androidx.appcompat.widget.AppCompatTextView {
         if(changed){
             paint.shader = LinearGradient(0f, 0f, width.toFloat(), height.toFloat(),
                 ContextCompat.getColor(context, R.color.pink_400),
-                ContextCompat.getColor(context, R.color.pink_600),
+                ContextCompat.getColor(context, R.color.pink_400),
                 Shader.TileMode.CLAMP)
         }
 

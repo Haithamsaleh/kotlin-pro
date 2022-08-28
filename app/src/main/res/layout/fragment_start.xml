@@ -51,13 +51,13 @@
                     android:shadowDx="0"
                     android:shadowDy="0"
                     android:shadowRadius="10"
-                    android:textColor="@color/black"
+                    android:textColor="@color/pink_400"
                     android:textSize="34sp" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:layout_marginStart="-700dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="-670dp"
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/screenshot_2022_06_08_170924_4_"
                     android:shadowColor="@color/black"
@@ -65,32 +65,48 @@
 
                     />
             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="مضاف حديثا"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:shadowColor="@color/pink_400"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+android:layout_marginTop="10dp"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 tools:context=".MainActivity"
                 android:orientation="vertical"
                 >
 
+
                 <HorizontalScrollView
 
                     android:layout_width="match_parent"
-                    android:layout_height="324dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
                     android:padding="8dp"
+                    android:layout_marginTop="-15dp"
                     android:scrollbars="none">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        >
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
-
+android:layout_marginBottom="16dp"
 
                             >
 
@@ -109,45 +125,56 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-60dp"
+                                android:gravity="center"
                                 android:text="ماوراء الخير و الشر"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
 
                                 />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-80dp"
+                                android:gravity="center"
                                 android:text="تباشير فلسفة للمستقبل"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginBottom="-110dp"
+                                android:layout_marginBottom="-103dp"
+                                android:gravity="center"
                                 android:text="فريدريش نيتشه"
                                 android:textColor="@color/black"
                                 android:textSize="12sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
+                            <Button
+                                android:id="@+id/confirm_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
 
-
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
 
@@ -169,11 +196,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-60dp"
+                                android:gravity="center"
                                 android:text="الامنتمي"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
 
                                 />
 
@@ -181,21 +208,30 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginBottom="-110dp"
+                                android:layout_marginBottom="-100dp"
+                                android:gravity="center"
                                 android:text="كولن ولسون"
                                 android:textColor="@color/black"
                                 android:textSize="12sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent2()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
 
@@ -217,11 +253,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-60dp"
+                                android:gravity="center"
                                 android:text="لم يعد رجلا"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
 
                                 />
 
@@ -230,19 +266,28 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-110dp"
+                                android:gravity="center"
                                 android:text=" أوسامو دازاي"
                                 android:textColor="@color/black"
                                 android:textSize="12sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent3()}"
+                                android:text="اقراء " />
                         </com.google.android.material.card.MaterialCardView>
 
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
 
@@ -264,32 +309,42 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-60dp"
+                                android:gravity="center"
                                 android:text="جمهورية أفلاطون"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
 
                                 />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-80dp"
+                                android:gravity="center"
                                 android:text="المدينة الفاضلة"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent4()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
 
@@ -311,11 +366,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-60dp"
+                                android:gravity="center"
                                 android:text="حديث الجنود"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
 
                                 />
 
@@ -324,70 +379,30 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginBottom="-110dp"
+                                android:gravity="center"
                                 android:text="أيمن العتوم"
                                 android:textColor="@color/black"
                                 android:textSize="12sp"
                                 android:textStyle="italic"
-                                android:gravity="center"
 
                                 />
-
-                        </com.google.android.material.card.MaterialCardView>
-
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
-
-                            <ImageView
+                            <Button
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent5()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
-
-                        </com.google.android.material.card.MaterialCardView>
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
-
-                        </com.google.android.material.card.MaterialCardView>
                     </LinearLayout>
                 </HorizontalScrollView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="قائمة الكتب"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:layout_marginEnd="16dp"
-                    />
+
 
 
 
@@ -397,26 +412,42 @@
                 android:layout_height="match_parent"
                 tools:context=".MainActivity"
                 android:orientation="vertical"
-                >
+                >  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="شائع الأن"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:shadowColor="@color/pink_400"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:layout_marginTop="10dp"
+                />
 
                 <HorizontalScrollView
 
                     android:layout_width="match_parent"
-                    android:layout_height="324dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:layout_marginBottom="15dp"
+
                     android:padding="8dp"
                     android:scrollbars="none">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        >
 
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="160dp"
-                            android:layout_height="300dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
                             app:cardElevation="16dp"
+                            android:layout_marginBottom="16dp"
 
 
                             >
@@ -426,7 +457,7 @@
                                 android:layout_height="180dp"
                                 android:layout_gravity="center"
                                 android:layout_marginTop="-60dp"
-                                android:onClick="@{() -> startFragment.goToNextBook1()}"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent()}"
                                 android:src="@drawable/book1"
 
                                 />
@@ -467,116 +498,245 @@
                                 android:gravity="center"
 
                                 />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
 
                         <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#0239FF"
                             app:cardElevation="16dp"
+
 
                             >
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:onClick="@{() -> startFragment.goToNextBook2()}"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_"
+                                android:layout_width="120dp"
+                                android:layout_height="180dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-60dp"
+                                android:onClick="@{() -> startFragment.goToNextBook1()}"
+                                android:src="@drawable/book6"
 
                                 />
 
-                        </com.google.android.material.card.MaterialCardView>
-
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
-
-                            <ImageView
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-60dp"
+                                android:text="الليالي البيضاء"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
 
-                        </com.google.android.material.card.MaterialCardView>
+                                />
 
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
-
-                            <ImageView
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-110dp"
+                                android:text="دوستويفسكي"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:gravity="center"
 
-                        </com.google.android.material.card.MaterialCardView>
-
-
-                        <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
-
-                            <ImageView
+                                />
+                            <Button
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent4()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
 
 
                         <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
+                            app:cardElevation="16dp"
+
+
+                            >
 
                             <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="180dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-60dp"
+                                android:onClick="@{() -> startFragment.goToNextBook1()}"
+                                android:src="@drawable/book7"
+
+                                />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-60dp"
+                                android:text="شيفرة دافنتشي"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-110dp"
+                                android:text="دان براون"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:gravity="center"
+
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent4()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
+
 
                         <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
+                            app:cardElevation="16dp"
+
+
+                            >
 
                             <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_width="120dp"
+                                android:layout_height="190dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-60dp"
+                                android:onClick="@{() -> startFragment.goToNextBook5()}"
+                                android:src="@drawable/book5"
 
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-60dp"
+                                android:gravity="center"
+                                android:text="حديث الجنود"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-110dp"
+                                android:gravity="center"
+                                android:text="أيمن العتوم"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent5()}"
+                                android:text="اقراء " />
                         </com.google.android.material.card.MaterialCardView>
+
 
                         <com.google.android.material.card.MaterialCardView
-                            android:layout_width="148dp"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8dp"
-                            android:backgroundTint="#1E1E1E"
-                            app:cardElevation="16dp">
+                            app:cardElevation="16dp"
+
+
+                            >
 
                             <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="190dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-60dp"
+                                android:onClick="@{() -> startFragment.goToNextBook4()}"
+                                android:src="@drawable/book4"
+
+                                />
+
+                            <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/screenshot_2022_06_08_170924_4_" />
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-60dp"
+                                android:gravity="center"
+                                android:text="جمهورية أفلاطون"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="-80dp"
+                                android:gravity="center"
+                                android:text="المدينة الفاضلة"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="italic"
+
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="280dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginEnd="8dp"
+                                android:onClick="@{() -> startFragment.getUrlFromIntent4()}"
+                                android:text="اقراء " />
 
                         </com.google.android.material.card.MaterialCardView>
+
                     </LinearLayout>
                 </HorizontalScrollView>
 
